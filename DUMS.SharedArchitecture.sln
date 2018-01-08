@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DUMS.SharedArchitecture.Remoting", "DUMS.SharedArchitecture.Remoting\DUMS.SharedArchitecture.Remoting.csproj", "{E68FAC21-A7DD-4372-9881-C37004C4BE43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DUMS.SharedArchitecture.ComponentManager", "DUMS.SharedArchitecture.ComponentManager\DUMS.SharedArchitecture.ComponentManager.csproj", "{6E9567D1-4860-47D2-B2C7-8BEE0BE80AB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DUMS.SharedArchitecture.EventBus", "DUMS.SharedArchitecture.EventBus\DUMS.SharedArchitecture.EventBus.csproj", "{C2516C8E-027B-407D-9DF7-5618438E1003}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DUMS.SharedArchitecture.Logging", "DUMS.SharedArchitecture.Logging\DUMS.SharedArchitecture.Logging.csproj", "{21BD94D5-2341-4CB5-B40A-339AEC8B79DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E68FAC21-A7DD-4372-9881-C37004C4BE43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E68FAC21-A7DD-4372-9881-C37004C4BE43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E68FAC21-A7DD-4372-9881-C37004C4BE43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E68FAC21-A7DD-4372-9881-C37004C4BE43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E9567D1-4860-47D2-B2C7-8BEE0BE80AB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E9567D1-4860-47D2-B2C7-8BEE0BE80AB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E9567D1-4860-47D2-B2C7-8BEE0BE80AB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E9567D1-4860-47D2-B2C7-8BEE0BE80AB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2516C8E-027B-407D-9DF7-5618438E1003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2516C8E-027B-407D-9DF7-5618438E1003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2516C8E-027B-407D-9DF7-5618438E1003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2516C8E-027B-407D-9DF7-5618438E1003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21BD94D5-2341-4CB5-B40A-339AEC8B79DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21BD94D5-2341-4CB5-B40A-339AEC8B79DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21BD94D5-2341-4CB5-B40A-339AEC8B79DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21BD94D5-2341-4CB5-B40A-339AEC8B79DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

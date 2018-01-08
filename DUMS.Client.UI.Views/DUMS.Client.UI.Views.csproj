@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD00F00A-7A51-4199-B259-D5AE3FF0FF03}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DUMS.Client.UI.Views</RootNamespace>
+    <AssemblyName>DUMS.Client.UI.Views</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\Client\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Login\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\Controls\AddUserAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagement\Controls\AddUserAccountForm.Designer.cs">
+      <DependentUpon>AddUserAccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\Controls\EditUserAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagement\Controls\EditUserAccountForm.Designer.cs">
+      <DependentUpon>EditUserAccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\Controls\UserAccountSearchControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserManagement\Controls\UserAccountSearchControl.Designer.cs">
+      <DependentUpon>UserAccountSearchControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\Controls\UserControls.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserManagement\Controls\UserControls.Designer.cs">
+      <DependentUpon>UserControls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\Controls\UserAccountTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserManagement\Controls\UserAccountTable.Designer.cs">
+      <DependentUpon>UserAccountTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement\HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManagement\HomeForm.Designer.cs">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Login\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement\Controls\AddUserAccountForm.resx">
+      <DependentUpon>AddUserAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement\Controls\EditUserAccountForm.resx">
+      <DependentUpon>EditUserAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement\Controls\UserAccountSearchControl.resx">
+      <DependentUpon>UserAccountSearchControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement\Controls\UserControls.resx">
+      <DependentUpon>UserControls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement\Controls\UserAccountTable.resx">
+      <DependentUpon>UserAccountTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement\HomeForm.resx">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DUMS.Client.UI.Contract\DUMS.Client.UI.Contract.csproj">
+      <Project>{fe9f5c2d-98c7-4f69-8fba-bef4176e5656}</Project>
+      <Name>DUMS.Client.UI.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DUMS.Client.UI.Presenter\DUMS.Client.UI.Presenter.csproj">
+      <Project>{97ad5816-260a-4cdb-8185-f4e32b1dec35}</Project>
+      <Name>DUMS.Client.UI.Presenter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
